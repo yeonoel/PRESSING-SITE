@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/* section navbar styling */
+header{
+    
+      background: url(images/wrapper.jpg);
+      height: 100vh;
+      background-size: cover;
+}
+nav{
+  
+    font-family: 'Roboto', sans-serif;    
+}
+.navbar {
+    
+    padding: 60px 60px 25px;
+}
+.navbar label{
+    line-height: 25px;
+    font-size: 35px;
+    color: #9782C3;
+}
+.navbar label span{
+    font-weight: 800;
+}
+.navbar i{
+    float: right;
+    font-size: 28px;
+    display: none;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 20px;
+}
+nav ul li a{
+   color: #333;
+}
+nav ul li a:hover{
+   color: #9782C3;
+}
+nav ul li:nth-child(4) a{
+   border: 2px solid #9782C3;
+   color: #333;
+   padding: 10px;
+   border-radius: 1.5rem;
+}
+nav ul li:nth-child(4) a:hover{
+   background: #9782C3  ;
+   color: #fff;
+}
+.wrapper{
+    margin-bottom: -25px;
+    font-family: 'Lato', sans-serif;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+
+}
+.wrapper h1{
+    text-align: center;
+ font-size: 55px;
+ color: #333;
+}
+.content {
+    margin-top: 1rem;
+}
+.content form{
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+
+.content form input{
+   height:3rem;
+}
+.content form input:nth-child(1){
+    width: 23rem;
+    border-radius: 2rem 0 0 2rem;
+}
+.content form input:nth-child(2){
+    width: 10rem;
+    border-radius: 0 2rem  2rem 0;
+}
+.content p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 992px){
+   
+.navbar i{
+    display: block;
+}
+.navbar ul li{
+    display: block;
+    line-height: 70px;
+    text-align: center;
+     margin-right: 0;
+    
+}
+.navbar ul li a{
+    color: #fff;
+    
+}
+.navbar ul{
+    top: 20px;
+    right: 5px;
+     position: absolute;
+    width: 200px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: .1rem;
+    display: none;
+    
+}
+nav ul li:nth-child(4) a{
+   color: #fff;
+  border-radius: none;
+  border: none;
+   
+}
+nav ul li:nth-child(4) a:hover{
+   color: #9782C3;
+   background: none;
+}
+.wrapper{
+    margin-bottom: -25px;
+    font-size: 15px;
+}
+.wrapper h1{
+   font-size:48px ;
+
+}
+
+
+
+}
+
+@media all and (max-width:772px){
+    .wrapper h1{
+        font-size: 40px;
+    }
+    .wrapper p{
+        font-size: 1rem;
+    }
+    .content form input{
+   height:2rem;
+}
+.content form input:nth-child(1){
+    width: 20rem;
+    border-radius: 2rem 0 0 2rem;
+}
+.content form input:nth-child(2){
+    width: 10rem;
+    border-radius: 0 2rem  2rem 0;
+}
+.content p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+}
+
+
+
+@media all and (max-width:680px){
+     .navbar label{
+        font-size: 31px;
+    }
+    .content form input:nth-child(1){
+    width: 18rem;
+    border-radius: 2rem;
+}
+.content form input:nth-child(2){
+    width: 5rem;
+    border-radius: 2rem;
+}
+.content form input{
+   height:2rem;
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.wrapper h1{
+    font-size: 30px;
+}
+.content p{
+    font-size: 1rem;
+}
+
+}
+
+
+
+@media all and (max-width:575px){
+    .navbar i{
+        font-size: 24px;
+    }
+
+    .navbar label{
+        font-size: 27px;
+    }
+    .content form input:nth-child(1){
+    width: 18rem;
+    border-radius: 2rem;
+}
+.content form input:nth-child(2){
+    width: 5rem;
+    border-radius: 2rem;
+}
+.content form input{
+   height:2rem;
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.wrapper h1{
+    font-size: 25px;
+}
+.content p{
+    font-size: .7rem;
+}
+ }
